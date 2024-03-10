@@ -3,8 +3,10 @@ import {
   ActivityIndicator,
   Image,
   ImageBackground,
+  Pressable,
   StyleSheet,
   Text,
+  TouchableOpacity,
   View,
 } from "react-native";
 import {
@@ -130,6 +132,43 @@ export default function App() {
               In London UK
             </Text>
           </View>
+
+          {/* Button  */}
+          <TouchableOpacity
+            onPress={() => {}}
+            style={{
+              flexDirection: "row",
+              backgroundColor: "#fff",
+              height: 40,
+              width: 115,
+              borderRadius: 13,
+              alignItems: "center",
+              justifyContent: "center",
+              marginTop: 20,
+              marginBottom: 20,
+              paddingLeft: 16,
+              paddingRight: 4,
+            }}
+          >
+            <Text
+              style={{
+                fontFamily: "Inter-Bold",
+                fontSize: 12,
+                color: "#000",
+                letterSpacing: 3,
+              }}
+            >
+              MORE
+            </Text>
+            <Image
+              source={require("./assets/ad.png")}
+              style={{
+                height: 25,
+                width: 25,
+                marginLeft: 8,
+              }}
+            />
+          </TouchableOpacity>
         </View>
       </View>
     </ImageBackground>
