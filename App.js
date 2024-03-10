@@ -68,6 +68,69 @@ export default function App() {
           ></Image>
         </View>
         {/* LOWER PORTION OF THE SCREEN */}
+        <View style={{ marginBottom: 46 }}>
+          {/* Greetings  */}
+          <View
+            style={{
+              flexDirection: "row",
+              alignItems: "center",
+            }}
+          >
+            <Image
+              source={require("./assets/sun.png")}
+              style={{ height: 32, width: 32 }}
+            />
+            <Text
+              style={{
+                fontFamily: "Inter-Regular",
+                fontSize: 20,
+                color: "#fff",
+                marginLeft: 8,
+                letterSpacing: 3,
+              }}
+            >
+              Good Morning
+            </Text>
+          </View>
+
+          {/* Time  */}
+          <View style={{ marginTop: 10 }}>
+            <Text>
+              <Text
+                style={{
+                  fontFamily: "Inter-Bold",
+                  fontSize: 100,
+                  color: "#fff",
+                }}
+              >
+                11:30
+              </Text>
+              <Text
+                style={{
+                  fontFamily: "Inter-Regular",
+                  fontSize: 20,
+                  color: "#fff",
+                }}
+              >
+                BST
+              </Text>
+            </Text>
+          </View>
+
+          {/* Location  */}
+          <View style={{ marginTop: 20 }}>
+            <Text
+              style={{
+                fontFamily: "Inter-Bold",
+                fontSize: 18,
+                color: "#fff",
+                letterSpacing: 3,
+              }}
+            >
+              In London UK
+            </Text>
+          </View>
+        </View>
       </View>
     </ImageBackground>
   );
