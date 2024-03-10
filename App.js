@@ -64,10 +64,12 @@ export default function App() {
               - Ada Lovelace
             </Text>
           </View>
-          <Image
-            source={require("./assets/refresh-icon.png")}
-            style={{ height: 32, width: 32 }}
-          ></Image>
+          <TouchableOpacity>
+            <Image
+              source={require("./assets/refresh-icon.png")}
+              style={{ height: 32, width: 32 }}
+            ></Image>
+          </TouchableOpacity>
         </View>
         {/* LOWER PORTION OF THE SCREEN */}
         <View style={{ marginBottom: 46 }}>
